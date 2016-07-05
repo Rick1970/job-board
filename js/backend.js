@@ -1,5 +1,6 @@
 //backend
-
+var displayPostings = function(index) {
+  $("#job-posting").append("<div id='back-job-posting' + index + ")
+}
 
 //frontend
-$("#test").append(backPositionArray[0].title);
