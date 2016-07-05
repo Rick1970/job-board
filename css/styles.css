@@ -1,6 +1,6 @@
 body {
   background-color: #e6faff;
-  background: linear-gradient(white, white, white, #b3daff);
+  background: linear-gradient(white, white, white, white, white, white, white, white, #b3daff);
   min-height: 100vh;
 }
 
@@ -18,17 +18,22 @@ body {
 }
 
 .sign-in {
-  position: absolute;
-  bottom: 3%;
-  right: 3%
+  background-color: rgba(211, 236, 255, 0.5);
+  width: 70%;
+  height: 18%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding-top: 1%;
 }
 
 #sign-in-box {
-  background-color: black;
+  background-color: rgba(220, 225, 227, 0.5);
   font-size: 1em;
   border: none;
   padding: 8px;
-  width: 70%;border: 1px solid grey;
+  width: 40%;
+  border: 1px solid grey;
 }
 
 #logo-name {
@@ -37,4 +42,25 @@ body {
 
 .tagline {
   font-style: italic;
+}
+
+button {
+  float: center;
+  background-color: #EBF2F5;
+}
+
+.search {
+  border-bottom: 2px solid grey;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.job-result {
+  padding: 5px;
+}
+
+.job-result-inner {
+  padding: 4%;
+  border: 1px solid black;
+  background-color: white;
 }
