@@ -27,8 +27,33 @@ $(window).scroll(function(){
 });
 
 $("#up-button").click(function() {
-  window.scrollTo(0, 0);
+  $("body").fadeOut("fast", function() {
+    window.scrollTo(0, 0);
+  });
+  $("body").fadeIn();
 });
+
+$("#languages").change(function(){
+  var language = $("#languages").val();
+  filterPostings(language);
+});
+
+$("#reset-button").click(function() {
+  resetPostings();
+});
+
+//frontend
+$(document).ready(function() {
+  $("#filter-button").click(function() {
+    var language = $("#languages").val();
+    filterPostings(language);
+  });
+
+  $("#reset-button").click(function() {
+    resetPostings();
+  });
+});
+
 
 // function randoColor() {
 //

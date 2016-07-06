@@ -31,15 +31,3 @@ function resetPostings() {
     $(this).show();
   });
 }
-
-//frontend
-$(document).ready(function() {
-  $("#filter-button").click(function() {
-    var language = $("#languages").val();
-    filterPostings(language);
-  });
-
-  $("#reset-button").click(function() {
-    resetPostings();
-  });
-});
