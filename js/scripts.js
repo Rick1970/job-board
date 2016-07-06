@@ -37,7 +37,7 @@ var colors = ["#E63946", "#457B9D", "#028090", "#FFBF00"]
     var language = $("#languages").val();
     filterPostings(language);
     $.each($(".panel-heading"), function() {
-      var position = Math.floor(Math.random() * (5-1) + 1);
+      var position = Math.floor(Math.random() * (6-1));
       console.log(position);
       $(this).css("background-color", colors[position]);
     });
