@@ -25,5 +25,13 @@ var backPositionArray = [
 
   new BackPosition ("Developer 8", "A front-end specialist working on customer-facing applications", "Amazon", ["HTML", "CSS", "Javascript"], 7),
 
-  new BackPosition ("Developer 9", "A jack of all trades needed to work on various applications", "Salesforce", ["Javascript", "Ruby", "SQL"], 8)
+  new BackPosition ("Developer 9", "A jack of all trades needed to work on various applications", "Salesforce", ["Javascript", "Ruby", "SQL"], 8),
+
+  new BackPosition ("Developer 10", "A jack of all trades needed to work on various applications", "Salesforce", ["Javascript", "Ruby", "SQL"], 9),
+
+  new BackPosition ("Developer 11", "A jack of all trades needed to work on various applications", "Salesforce", ["Javascript", "Ruby", "SQL"], 10),
+
+  new BackPosition ("Developer 12", "A jack of all trades needed to work on various applications", "Salesforce", ["Javascript", "Ruby", "SQL"], 11),
+
+  new BackPosition ("Developer 13", "A jack of all trades needed to work on various applications", "Salesforce", ["Javascript", "Ruby", "SQL"], 12)
 ];
