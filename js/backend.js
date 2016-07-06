@@ -19,8 +19,7 @@ for (var i = 0; i < backPositionArray.length; i++) {
 function filterPostings(match) {
   $(".back-job-postings").each(function(index) {
     if (backPositionArray[index].tags.indexOf(match) === -1) {
-      $(this).detach().appendTo('#job-search-output');
-      $(this).hide();
+      $(this).detach().appendTo('#job-search-output').hide();
     } else if (backPositionArray[index].tags.indexOf(match) > -1) {
       $(this).show();
     }
