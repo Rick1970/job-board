@@ -1,7 +1,26 @@
 body {
   background-color: #e6faff;
-  background: linear-gradient(white, white, white, #b3daff);
+  background: linear-gradient(white, white, white, white, white, white, white, white, #b3daff);
   min-height: 100vh;
+}
+
+.container {
+  display: none;
+}
+
+.navigation {
+  height: 100px;
+  margin-left: 10px;
+}
+
+.navigation button {
+  height: 55px;
+  width: 100px;
+  background: linear-gradient(white, white, white, white, #b3daff);
+  border: none;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: right;
 }
 
 .landing {
@@ -10,7 +29,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
   color: white;
   text-align: center;
   text-shadow: -1px 0 black, 0 2px 0 black, 0 -1px black;
@@ -18,17 +37,22 @@ body {
 }
 
 .sign-in {
-  position: absolute;
-  bottom: 3%;
-  right: 3%
+  background-color: rgba(211, 236, 255, 0.5);
+  width: 70%;
+  height: 18%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding-top: 1%;
 }
 
 #sign-in-box {
-  background-color: black;
+  background-color: rgba(220, 225, 227, 0.5);
   font-size: 1em;
   border: none;
   padding: 8px;
-  width: 70%;border: 1px solid grey;
+  width: 40%;
+  border: 1px solid grey;
 }
 
 #logo-name {
@@ -37,4 +61,60 @@ body {
 
 .tagline {
   font-style: italic;
+}
+
+button {
+  background-color: #e6faff;
+}
+
+.search {
+  border-bottom: 2px solid grey;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.job-result {
+  padding: 5px;
+}
+
+.job-result-inner {
+  padding: 4%;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.panel-heading {
+  padding-left: 0;
+  padding-bottom: 0px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: 2px solid grey;
+  margin-bottom: 10px;
+}
+
+.panel-body {
+  position: relative;
+  left: 10px;
+  height: 200px;
+  opacity: 1.0;
+  color: black;
+}
+
+#dragoon {
+  background-image: url("../img/dragoon.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+#boom:hover {
+  transform: scale(2, 2);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#highlight:hover {
+  background: linear-gradient(#b3daff, white, white, white, white);
+  transition: 0.5s;
 }
