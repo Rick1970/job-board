@@ -93,21 +93,39 @@ button {
   background-color: #e6faff;
 }
 
+/*FILTER AREA*/
+
+#languages {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container .btn {
+  width: 80%;
+  margin: 5% 1% 1% 1%;
+  color: white;
+  font-size: 20px;
+}
+
+#filter-button {
+  background-color: seagreen;
+}
+
+#reset-button {
+  background-color: darkred;
+}
+
 .filter-container {
   border-bottom: 2px solid grey;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
-.job-result {
-  padding: 5px;
-}
-
-.job-result-inner {
-  padding: 4%;
-  border: 1px solid black;
-  background-color: white;
-}
+/*JOB AREA*/
 
 .panel-heading {
   padding-left: 0;
