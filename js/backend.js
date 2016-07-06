@@ -18,8 +18,6 @@ for (var i = 0; i < backPositionArray.length; i++) {
 
 function filterPostings(match) {
   $(".back-job-postings").each(function(index) {
-    console.log(index);
-    console.log();
     if (backPositionArray[index].tags.indexOf(match) === -1) {
       $(this).hide(); //test change
     } else if (backPositionArray[index].tags.indexOf(match) > -1) {
