@@ -13,6 +13,8 @@
 // });
 $(function(){
 
+var colors = ["#E63946", "#457B9D", "#028090", "#FFBF00"]
+
   $("#sign-in-button").click(function() {
     $(".landing").fadeOut("fast", function() {
       $(".container").fadeIn();
@@ -34,6 +36,11 @@ $(function(){
   $("#languages").change(function(){
     var language = $("#languages").val();
     filterPostings(language);
+    $.each($(".panel-heading"), function() {
+      var position = Math.floor(Math.random() * (5-1) + 1);
+      console.log(position);
+      $(this).css("background-color", colors[position]);
+    });
   });
 
   $("#reset-button").click(function() {
