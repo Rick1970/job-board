@@ -47,6 +47,7 @@ var colors = ["#E63946", "#457B9D", "#028090", "#FFBF00"]
     resetPostings();
   });
 
+
 // function randoColor() {
 //
 // };
