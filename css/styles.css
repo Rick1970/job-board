@@ -108,6 +108,13 @@ button {
 
 /*FILTER AREA*/
 
+#up-button-container {
+  display: none;
+  z-index: 1;
+  right: 5%;
+  top: 1%;
+}
+
 #languages {
   width: 60%;
   height: 60px;
@@ -185,6 +192,8 @@ button {
 .full-container {
   margin: 0 auto;
   width: 100%
+  min-height: 300px;
+  background-color: #aaa;
 }
 
 .feature {
@@ -194,7 +203,7 @@ button {
 }
 
 .f1 {
-  border-right: 2px solid seagreen;
+
 }
 
 .f2 {
@@ -212,10 +221,10 @@ button {
   border-top: 3px solid #333;
   color: #999;
   text-align: center;
+  background-color: #333;
 }
 
 .copyright {
-  background-color: #222;
   color: #999;
   min-height: 40px;
   padding: 1%;

@@ -21,6 +21,15 @@ $("#sign-in-button").click(function() {
   });
 });
 
+$(window).scroll(function(){
+  $("#up-button-container").fadeIn("fast");
+  $("#up-button-container").css("position", "fixed");
+});
+
+$("#up-button").click(function() {
+  window.scrollTo(0, 0);
+});
+
 // function randoColor() {
 //
 // };
