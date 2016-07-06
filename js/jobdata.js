@@ -5,7 +5,7 @@ function BackPosition(title, description, company, location, tags, arrayIndex) {
   this.company = company;
   this.location = location;
   this.tags = tags; //array
-  this.arrayIndex; //hidden property, equal to position in backPositionArray
+  this.arrayIndex = arrayIndex; //hidden property, equal to position in backPositionArray
 }
 
 //array of all job postings
