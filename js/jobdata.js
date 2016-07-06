@@ -9,7 +9,7 @@ function BackPosition(title, description, company, tags, arrayIndex) {
 
 //array of all job postings
 var backPositionArray = [
-  new BackPosition ("Developer 1", "A .NET developer working on mostly back-end applications", "Microsoft", ["C#", "Javascript"], 0),
+  new BackPosition ("Developer 1", "A .NET developer working on mostly back-end applications", "Microsoft", ["C-Sharp", "Javascript"], 0),
 
   new BackPosition ("Developer 2", "A Java developer working on mostly cloud applications", "Amazon", ["Java", "Javascript", "Ruby"], 1),
 
