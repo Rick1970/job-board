@@ -11,3 +11,9 @@ $(".panel-heading").click(function() {
     console.log("hi");
   });
 });
+
+$("#landing-button").click(function() {
+  $(".landing").fadeOut("fast", function() {
+    $(".container").fadeIn();
+  });
+});
