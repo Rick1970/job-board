@@ -135,16 +135,28 @@ button {
 }
 
 .feature {
-  background-color: seagreen;
   min-height: 100px;
   margin-bottom: 0;
   padding: 3%;
 }
+
+.f1 {
+  border-right: 2px solid seagreen;
+}
+
+.f2 {
+  
+}
+
+.feature-image {
+  width: 65%;
+}
+
 /*END FEATURE*/
 
 .footer {
   padding: 3%;
-  background-color: #333;
+  border-top: 3px solid #333;
   color: #999;
   text-align: center;
 }
