@@ -34,12 +34,12 @@ function resetPostings() {
 
 //frontend
 $(document).ready(function() {
-  $("#filter").click(function() {
+  $("#filter-button").click(function() {
     var language = $("#languages").val();
     filterPostings(language);
   });
 
-  $("#reset").click(function() {
+  $("#reset-button").click(function() {
     resetPostings();
   });
 });

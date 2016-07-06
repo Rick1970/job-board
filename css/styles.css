@@ -93,7 +93,7 @@ button {
   background-color: #e6faff;
 }
 
-.search {
+.filter-container {
   border-bottom: 2px solid grey;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -145,7 +145,7 @@ button {
 }
 
 .f2 {
-  
+
 }
 
 .feature-image {

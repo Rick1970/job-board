@@ -31,18 +31,32 @@
         <button id="boom" type="button">Contact</button>
         <button id="twisted" type="button">sign up</button>
       </div>
-      <div class="search">
-        <h3>Search</h3>
-        <input type="text" placeholder="Search here...">
+      <div class="filter-container">
+        <form>
+          <select class="form-control" id="languages">
+            <option value="C-Sharp">C-Sharp</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Java">Java</option>
+            <option value="Ruby">Ruby</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+            <option value="SQL">SQL</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+          </select>
+          <button id="filter-button" class="btn" type="button" name="button">Search</button>
+          <button id="reset-button" class="btn" type="button" name="button">Reset</button>
+        </form>
       </div>
+
       <div id="job-search-output">
-        
+
       </div>
     </div>
     <div class="container full-container">
       <div class="row">
         <div class="feature f1 col-sm-6">
-          <h3>Maybe a blog... or articles</h3>
+          <h3>Featured:</h3>
           <img class="feature-image" src="img/world_people.jpg" alt=""/>
         </div>
         <div class="feature f2 col-sm-6">
