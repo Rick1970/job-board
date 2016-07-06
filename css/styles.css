@@ -1,6 +1,4 @@
 body {
-  background-color: #e6faff;
-  background: linear-gradient(white, white, white, white, white, white, white, white, #b3daff);
   font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 
@@ -47,13 +45,29 @@ body {
   background-color: rgba(220, 225, 227, 0.5);
   font-size: 1em;
   padding: 8px;
+  margin-bottom: 8px;
   border: 1px solid grey;
+  width: 60%;
 }
 
-.landing-inputs input:focus {
+#sign-in-button {
+  background-color: steelblue;
+}
+
+#sign-up-button {
+  background-color: hotpink;
+}
+
+#sign-in-box:focus {
   outline: none;
-  border: 1px solid seagreen !important;
-  box-shadow: 0 0 10px seagreen;
+  border: 1px solid steelblue !important;
+  box-shadow: 0 0 15px steelblue;
+}
+
+#sign-up-box:focus {
+  outline: none;
+  border: 1px solid hotpink !important;
+  box-shadow: 0 0 15px hotpink;
 }
 
 #logo-name {
