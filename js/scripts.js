@@ -38,7 +38,6 @@ var colors = ["#E63946", "#457B9D", "#028090", "#FFBF00"]
     filterPostings(language);
     $.each($(".panel-heading"), function() {
       var position = Math.floor(Math.random() * (6-1));
-      console.log(position);
       $(this).css("background-color", colors[position]);
     });
   });
