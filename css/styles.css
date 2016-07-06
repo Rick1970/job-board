@@ -96,8 +96,10 @@ button {
 /*FILTER AREA*/
 
 #languages {
-  width: 80%;
-  margin: 0 auto;
+  width: 60%;
+  height: 60px;
+  margin: 0 20% 0 20%;
+  font-size: 30px;
 }
 
 .button-container {
@@ -105,10 +107,10 @@ button {
 }
 
 .button-container .btn {
-  width: 80%;
+  width: 70%;
   margin: 5% 1% 1% 1%;
   color: white;
-  font-size: 20px;
+  font-size: 3vh;
 }
 
 #filter-button {
@@ -127,22 +129,25 @@ button {
 
 /*JOB AREA*/
 
+.panel {
+  border-radius: 0;
+}
+
 .panel-heading {
-  padding-left: 0;
-  padding-bottom: 0px;
+  padding: 15px 0 10px 15px;
   font-weight: bold;
   font-size: 1.5em;
-  text-align: center;
+  text-align: left;
   border-bottom: 2px solid grey;
   margin-bottom: 10px;
+  border-radius: 0;
 }
 
 .panel-body {
-  position: relative;
   left: 10px;
-  height: 200px;
+  min-height: 180px;
   opacity: 1.0;
-  color: black;
+  color: #555;
 }
 
 /*FEATURE AREA*/
