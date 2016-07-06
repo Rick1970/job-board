@@ -16,16 +16,6 @@ body {
   margin-left: 10px;
 }
 
-.navigation button {
-  height: 55px;
-  width: 100px;
-  background: linear-gradient(white, white, white, white, #b3daff);
-  border: none;
-  margin-top: 10px;
-  margin-left: 5px;
-  float: right;
-}
-
 
 /*LANDING SECTION*/
 
@@ -97,7 +87,7 @@ button {
 
 .job-search-header {
   background-image: url("../img/header.jpg");
-  min-height: 25vh;
+  min-height: 35vh;
   background-size: cover;
   background-position: center;
   padding-top: 15%;
@@ -116,37 +106,34 @@ button {
 }
 
 #languages {
-  width: 60%;
+  width: 100%;
   height: 60px;
-  margin: 0 20% 0 20%;
+  margin: 0 10% 0 10%;
   font-size: 30px;
 }
 
 .button-container {
   text-align: center;
-  padding: 8%;
+  padding: 0;
+  margin: 0;
 }
 
 .button-container .btn {
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
   color: white;
-  font-size: 2.5vh;
+  font-size: 20px;
   border-radius: 0;
-}
-
-#filter-button {
-  background-color: seagreen;
-  border-radius: 100%;
 }
 
 #reset-button {
   background-color: darkred;
   border-radius: 100%;
+  margin-top: -20px;
 }
 
 .filter-container {
-
+  padding-top: 20px;
 }
 
 /*JOB AREA*/
