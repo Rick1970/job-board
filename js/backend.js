@@ -16,7 +16,7 @@ for (var i = 0; i < backPositionArray.length; i++) {
   displayPostings(i);
 }
 
-function filterPostings (match) {
+function filterPostings(match) {
   $(".back-job-postings").each(function(index) {
     if (backPositionArray[index].tags.indexOf(match) === -1) {
       $(this).hide();
@@ -26,12 +26,20 @@ function filterPostings (match) {
   });
 }
 
+function resetPostings() {
+  $(".back-job-postings").each(function(index) {
+    $(this).show();
+  });
+}
+
 //frontend
 $(document).ready(function() {
-  $("#filter").click(function(event) {
-    event.preventDefault();
-
+  $("#filter").click(function() {
     var language = $("#languages").val();
     filterPostings(language);
+  });
+
+  $("#reset").click(function() {
+    resetPostings();
   });
 });
