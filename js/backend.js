@@ -9,7 +9,7 @@ function displayPostings(i) {
     }
   }
   sentence += "</p></div></div></div>";
-  $("#job-search-output").append(sentence);
+  $("#test-output").append(sentence); //test change
 }
 
 for (var i = 0; i < backPositionArray.length; i++) {
