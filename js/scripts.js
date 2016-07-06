@@ -13,8 +13,6 @@
 // });
 $(function(){
 
-var colors = ["#E63946", "#457B9D", "#028090", "#FFBF00"]
-
   $("#sign-in-button").click(function() {
     $(".landing").fadeOut("fast", function() {
       $(".container").fadeIn();
@@ -36,10 +34,6 @@ var colors = ["#E63946", "#457B9D", "#028090", "#FFBF00"]
   $("#languages").change(function(){
     var language = $("#languages").val();
     filterPostings(language);
-    $.each($(".panel-heading"), function() {
-      var position = Math.floor(Math.random() * (6-1));
-      $(this).css("background-color", colors[position]);
-    });
   });
 
   $("#reset-button").click(function() {
