@@ -38,16 +38,12 @@ $("#languages").change(function(){
   filterPostings(language);
 });
 
-$("#reset-button").click(function() {
-  resetPostings();
-});
-
 //frontend
 $(document).ready(function() {
-  $("#filter-button").click(function() {
-    var language = $("#languages").val();
-    filterPostings(language);
-  });
+  // $("#filter-button").click(function() {
+  //   var language = $("#languages").val();
+  //   filterPostings(language);
+  // });
 
   $("#reset-button").click(function() {
     resetPostings();
