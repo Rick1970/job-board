@@ -25,35 +25,42 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="navigation">
-        <button id="highlight" type="button">Search</button>
-        <button id="boom" type="button">Contact</button>
-        <button id="twisted" type="button">sign up</button>
-      </div>
+    <div class="job-search-header">
       <div class="filter-container">
-        <form>
-          <select class="form-control" id="languages">
-            <option value="C-Sharp">C-Sharp</option>
-            <option value="Javascript">Javascript</option>
-            <option value="Java">Java</option>
-            <option value="Ruby">Ruby</option>
-            <option value="CSS">CSS</option>
-            <option value="HTML">HTML</option>
-            <option value="SQL">SQL</option>
-            <option value="PHP">PHP</option>
-            <option value="Python">Python</option>
-          </select>
-          <div class="button-container container">
-            <div class="col-md-6">
-              <button id="filter-button" class="btn" type="button" name="button">Search</button>
-            </div>
-            <div class="col-md-6">
-              <button id="reset-button" class="btn" type="button" name="button">Reset</button>
+        <div class="row">
+          <div class="col-sm-8">
+            <form>
+              <select class="form-control" id="languages">
+                <option value="C-Sharp">C-Sharp</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Java">Java</option>
+                <option value="Ruby">Ruby</option>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+                <option value="SQL">SQL</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+              </select>
+            </form>
+          </div>
+          <div class="col-sm-4">
+            <div class="button-container">
+              <div class="col-xs-6">
+                <button id="filter-button" class="btn" type="button" name="button">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button id="reset-button" class="btn" type="button" name="button">
+                  <span class="glyphicon glyphicon-remove"></span>
+                </button>
+              </div>
             </div>
           </div>
-        </form>
+        </div>
       </div>
+    </div>
+    <div class="container">
       <div id="job-search-output">
 
       </div>
