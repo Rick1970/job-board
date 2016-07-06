@@ -1,14 +1,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #A9BCD0;
 }
 
 /*FOR TESTING*/
-.landing {
-  display: none;
-}
-/*.container {
+/*.landing {
   display: none;
 }*/
+.hidden {
+  display: none;
+}
 /*END TESTING*/
 
 .navigation {
@@ -81,6 +82,7 @@ body {
 
 button {
   background-color: #e6faff;
+  outline: none;
 }
 
 /*HEADER*/
@@ -100,15 +102,16 @@ button {
 
 #up-button-container {
   display: none;
-  z-index: 1;
-  right: 5%;
-  top: 1%;
 }
 
 #up-button {
   border-radius: 100px;
   background-color: black;
   color: white;
+  position: fixed;
+  right: 5%;
+  top: 1%;
+  z-index: 1;
 }
 
 #languages {
@@ -136,6 +139,7 @@ button {
   background-color: darkred;
   border-radius: 100%;
   margin-top: -10px;
+  outline: none;
 }
 
 .filter-container {

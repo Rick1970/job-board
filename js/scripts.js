@@ -11,19 +11,26 @@
 //     console.log("hi");
 //   });
 // });
+var showButton = false;
 $(function(){
 
 var colors = ["#E63946", "#457B9D", "#028090", "#FFBF00"]
 
   $("#sign-in-button").click(function() {
     $(".landing").fadeOut("fast", function() {
-      $(".container").fadeIn();
+      $(".hidden").each(function() {
+        $(this).removeClass("hidden");
+        $(this).fadeIn();
+      });
+      showButton = true;
     });
   });
 
   $(window).scroll(function(){
-    $("#up-button-container").fadeIn("fast");
-    $("#up-button-container").css("position", "fixed");
+    if (showButton === true) {
+      $("#up-button-container").fadeIn("fast");
+      $("#up-button-container").css("position", "fixed");
+    }
   });
 
   $("#up-button").click(function() {
