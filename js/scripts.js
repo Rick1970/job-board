@@ -11,17 +11,24 @@
 //     console.log("hi");
 //   });
 // });
+var showButton = false;
 $(function(){
 
   $("#sign-in-button").click(function() {
     $(".landing").fadeOut("fast", function() {
-      $(".container").fadeIn();
+      $(".hidden").each(function() {
+        $(this).removeClass("hidden");
+        $(this).fadeIn();
+      });
+      showButton = true;
     });
   });
 
   $(window).scroll(function(){
-    $("#up-button-container").fadeIn("fast");
-    $("#up-button-container").css("position", "fixed");
+    if (showButton === true) {
+      $("#up-button-container").fadeIn("fast");
+      $("#up-button-container").css("position", "fixed");
+    }
   });
 
   $("#up-button").click(function() {
