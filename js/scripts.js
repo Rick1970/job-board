@@ -12,7 +12,7 @@ $(".panel-heading").click(function() {
   });
 });
 
-$("#landing-button").click(function() {
+$("#sign-in-button").click(function() {
   $(".landing").fadeOut("fast", function() {
     $(".container").fadeIn();
   });
