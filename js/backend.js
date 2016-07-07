@@ -19,7 +19,8 @@ for (var i = 0; i < backPositionArray.length; i++) {
 //randomizes colors for job posting heading
 $.each($(".panel-heading"), function() {
   var color = Math.floor(Math.random() * 256);
-  $(this).css("background-color", "rgba(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + 1 + ")");
+  // $(this).css("background-color", "rgba(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.random() + ")");
+  $(this).css("background-color", "hsla(" + Math.floor(Math.random() * 360) + "," + Math.floor(Math.random() * 100) + "%," + Math.floor(Math.random() * 100) + "%," + Math.random() + ")");
 });
 
 //filters job postings by tag (i.e. programming language)
