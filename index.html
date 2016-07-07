@@ -19,8 +19,8 @@
           <h3><strong>Sign In</strong></h3>
           <div class="row">
             <div class="col-xs-8">
-              <input class="sign-in-box" type="text" placeholder="User Name">
-              <input class="sign-in-box" type="text" placeholder="Password">
+              <input class="sign-in-box" type="text" placeholder="Email Address">
+              <input class="sign-in-box" type="password" placeholder="Password">
             </div>
             <div class="col-xs-4">
               <button id="sign-in-button" class="btn" type="button">Sign In</button>
@@ -36,8 +36,8 @@
           <h3><strong>Sign Up</strong></h3>
           <div class="row">
             <div class="col-xs-8">
-              <input id="register-username" class="sign-up-box" type="text" placeholder="Desired Username">
               <input id="register-email" class="sign-up-box" type="text" placeholder="Email Address">
+              <input id="register-password" class="sign-up-box" type="password" placeholder="Password">
             </div>
             <div class="col-xs-4">
               <button id="sign-up-button" class="btn" type="button">Sign Up</button>
@@ -182,7 +182,6 @@
     <div class="full-container hidden">
       <div class="row">
         <div class="feature col-sm-6 col-xs-12">
-
           <div id="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -194,18 +193,30 @@
 
               <div class="item active">
                 <img class="carimg" src="img/arrows.jpg" alt="chart of arrows">
+                <div class="carousel-caption">
+                  <h3>Latest Salary Trends</h3>
+                </div>
               </div>
 
               <div class="item">
-                <img class="carimg" src="img/table.jpg" alt="tabe with accessories" >
+                <img class="carimg" src="img/table.jpg" alt="tabe with accessories">
+                <div class="carousel-caption">
+                  <h3>Top Office Supplies</h3>
+                </div>
               </div>
 
               <div class="item">
                 <img class="carimg" src="img/city.jpg" alt="skyline night time">
+                <div class="carousel-caption">
+                  <h3>Best Places to Work</h3>
+                </div>
               </div>
 
               <div class="item">
                 <img class="carimg" src="img/balloons.jpg" alt="people working on laptops">
+                <div class="carousel-caption">
+                  <h3>Travel</h3>
+                </div>
               </div>
 
             </div>
@@ -223,8 +234,24 @@
         </div>
 
         <div class="feature col-sm-6 col-xs-12">
-          <h3>Featured:</h3>
-          <img class="feature-image" src="img/world_people.jpg" alt=""/>
+          <h3>Featured Companies:</h3>
+          <div class="row">
+            <div class="center col-xs-6">
+              <img id="doughnuts" class="feature-image" src="img/sponsor_logo.png" alt="Pin &#38; Cushion Doughnuts" />
+            </div>
+            <div class="center col-xs-6">
+              <img class="feature-image" src="img/world_people.jpg" alt=""/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="center col-xs-6">
+              <img class="feature-image" src="img/robotics.jpg" alt="A robot against a blue background" />
+            </div>
+            <div class="center col-xs-6">
+              <img class="feature-image" src="img/dog.png" alt="A dog outline logo" />
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
