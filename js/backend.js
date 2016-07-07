@@ -29,7 +29,8 @@ function resetPostings() {
   $(".back-job-postings").each(function(index) {
     $(this).hide();
   });
-  $("#showMoreResults").text("Show More Results");
+  $("#showMoreResults").text("");
+  $("#showMoreResults").append("<span class='glyphicon glyphicon-chevron-down'></span>");
   numberDisplayed = 1;
   showMoreResults();
 }
