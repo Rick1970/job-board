@@ -1,5 +1,5 @@
-//Constructor function for new job postings
-function BackPosition(title, description, company, location, tags, arrayIndex) {
+//Constructor function for new users
+function User(title, description, company, location, tags, arrayIndex) {
   this.title = title;
   this.description = description;
   this.company = company;
