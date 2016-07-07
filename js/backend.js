@@ -64,7 +64,6 @@ function randomizeColors() {
   });
 }
 
-
 //populates job postings, hides everything, and shows initial six job postings
 for (var i = 0; i < backPositionArray.length; i++) {
   displayPostings(i);
