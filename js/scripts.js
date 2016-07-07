@@ -24,13 +24,15 @@ $(function(){
     });
   });
 
-  $(window).scroll(function(){
-    if (showButton === true) {
-      $("#up-button-container").fadeIn("fast");
-      $("#up-button-container").css("position", "fixed");
-    }
-  });
+  // //Shows the ^ button
+  // $(window).scroll(function(){
+  //   if (showButton === true) {
+  //     $("#up-button-container").fadeIn("fast");
+  //     $("#up-button-container").css("position", "fixed");
+  //   }
+  // });
 
+  //Scrolls to the top of page on click of ^ button
   $("#up-button").click(function() {
     $("body").fadeOut("fast", function() {
       window.scrollTo(0, 0);
@@ -38,11 +40,13 @@ $(function(){
     $("body").fadeIn();
   });
 
+  //Runs the backend function to display filtered jobs as selected
   $("#languages").change(function(){
     var language = $("#languages").val();
     filterPostings(language);
   });
 
+  //Resets the listed jobs to default
   $("#reset-button").click(function() {
     resetPostings();
   });
