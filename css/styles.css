@@ -162,12 +162,17 @@ button {
 
 #up-button {
   border-radius: 0;
-  background-color: black;
-  color: white;
+  border: none;
+  background-color: #ddd;
+  color: #555;
   height: 50px;
   width: 50px;
   float: right;
   margin: 5px;
+}
+
+#up-button span {
+  font-size: 22px;
 }
 
 /*FILTER AREA*/
@@ -280,6 +285,13 @@ button {
   min-height: 100px;
   margin-bottom: 0;
   padding: 4%;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #555;
+  border-bottom: 2px solid #777;
+  margin-bottom: 12px;
 }
 
 .carimg  {
@@ -291,6 +303,7 @@ button {
 
 .center {
   text-align: center;
+  min-height: 100%;
 }
 
 .item {
@@ -300,6 +313,7 @@ button {
 
 .item h3 {
   text-shadow: -1px 0 black, 0 2px 0 black, 0 1px black;
+  color: white;
 }
 
 #carousel {
@@ -307,13 +321,19 @@ button {
 }
 
 .feature-image {
-  width: 100%;
-  background-color: white;
+  width: 90%;
+  height: 90%;
   margin: 0;
 }
 
-#doughnut {
-  
+#doughnuts {
+  background-color: coral;
+}
+
+#dog {
+  background-color: black;
+  padding: 10%;
+  border-bottom: 3px solid black;
 }
 
 /*END FEATURE*/
