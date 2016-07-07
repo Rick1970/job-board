@@ -192,6 +192,7 @@ button {
   height: 60px;
   margin: 0 10% 0 10%;
   font-size: 3vh;
+  border-radius: 0;
 }
 
 .button-container {
