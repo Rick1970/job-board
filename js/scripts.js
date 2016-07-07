@@ -7,6 +7,9 @@ $(function(){
 
   $("#sign-up-button").click(function() {
     $("#complete-profile-container").fadeIn();
+    $('html, body').animate({
+      scrollTop: 200
+    }, 500);
   });
 
   $("#later-button").click(function() {
