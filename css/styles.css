@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #A9BCD0;
+  background-color: #eee;
 }
 
 /*FOR TESTING*/
@@ -93,7 +93,7 @@ button {
   background-size: cover;
   background-position: center;
   padding-top: 15%;
-  border-bottom: 8px solid grey;
+  border-bottom: 5px solid grey;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -187,16 +187,16 @@ button {
 /*FEATURE AREA*/
 
 .full-container {
-  margin: 0 auto;
+  margin: 20px auto 0;
   width: 100%
   min-height: 300px;
-  background-color: #aaa;
+  background-color: #ddd;
 }
 
 .feature {
   min-height: 100px;
   margin-bottom: 0;
-  padding: 3%;
+  padding: 4%;
 }
 
 .f1 {
@@ -215,10 +215,10 @@ button {
 
 .footer {
   padding: 3%;
-  border-top: 3px solid #333;
+  border-top: 1px solid #eee;
   color: #999;
   text-align: center;
-  background-color: #333;
+  background-color: #ddd;
 }
 
 .copyright {
