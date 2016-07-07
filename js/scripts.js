@@ -32,7 +32,7 @@ $(function(){
   });
 
   //Show more job posting results
-  $("#showMoreResultsButton").click(function() {
+  $("#showMoreResults").click(function() {
     showMoreResults();
   });
 });

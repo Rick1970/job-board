@@ -1,4 +1,4 @@
-//global variable
+//global variables
 var numberDisplayed = 6;
 
 //populates job postings at initiation of page
@@ -15,18 +15,7 @@ function displayPostings(i) {
   $("#job-search-output").append(sentence);
 }
 
-for (var i = 0; i < numberDisplayed; i++) {
-  displayPostings(i);
-};
-
-//randomizes colors for job posting heading
-$.each($(".panel-heading"), function() {
-  var color = Math.floor(Math.random() * 256);
-  // $(this).css("background-color", "rgba(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.random() + ")");
-  $(this).css("background-color", "hsla(" + Math.floor(Math.random() * 360) + "," + Math.floor(Math.random() * 100) + "%," + Math.floor(Math.random() * 100) + "%," + Math.random() + ")");
-});
-
-//filters job postings by tag (i.e. programming language)
+//filters job postings by tag (e.g. programming language)
 function filterPostings(match) {
   $(".back-job-postings").each(function(index) {
     if (backPositionArray[index].tags.indexOf(match) === -1) {
@@ -37,19 +26,48 @@ function filterPostings(match) {
   });
 }
 
-
 //resets job posting results to default state when clicked
 function resetPostings() {
   $(".back-job-postings").each(function(index) {
     $(this).show();
   });
+  $("#showMoreResults").text("Show More Results");
 }
 
 //show more job posting results when clicked
 function showMoreResults() {
   var numberDisplayedTo = numberDisplayed + 6;
-  for (var i = numberDisplayed; i < numberDisplayedTo; i++) {
-    displayPostings(i);
+  for (var i = numberDisplayed; i <= numberDisplayedTo; i++) {
+    var number = $(".back-job-postings:nth-child(" + i + ")");
+    if (i === backPositionArray.length) {
+      number.show();
+      $("#showMoreResults").text("");
+    } else if (number.length > 0) {  //roundabout way of checking for existence
+      number.show();
+    } else {
+      $("#showMoreResults").text("");
+    }
   };
   numberDisplayed += 6;
+}
+
+//randomizes colors for job posting heading
+$.each($(".panel-heading"), function() {
+  var color = Math.floor(Math.random() * 256);
+  // $(this).css("background-color", "rgba(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.random() + ")");
+  $(this).css("background-color", "hsla(" + Math.floor(Math.random() * 360) + "," + Math.floor(Math.random() * 100) + "%," + Math.floor(Math.random() * 100) + "%," + Math.random() + ")");
+});
+
+//populates job postings and hides everything
+for (var i = 0; i < backPositionArray.length; i++) {
+  displayPostings(i);
+};
+
+$(".back-job-postings").each(function(index) {
+  $(this).hide();
+})
+
+//show first six job postings
+for (var i = 1; i <= numberDisplayed; i++) {
+  $(".back-job-postings:nth-child(" + i + ")").show();
 }
