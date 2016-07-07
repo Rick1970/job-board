@@ -149,6 +149,10 @@ button {
 #top-nav {
   background-color: #ddd;
 }
+#nav-name {
+  margin: 0;
+  float: left;
+}
 
 .job-search-header {
   background-image: url("../img/header.jpg");

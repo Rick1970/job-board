@@ -1,3 +1,9 @@
+function transition() {
+  $("#complete-profile-container").fadeIn();
+  $('html, body').animate({
+    scrollTop: 200
+  }, 500);
+}
 
 $(function(){
   $("#sign-in-button").click(function() {
@@ -5,10 +11,7 @@ $(function(){
   });
 
   $("#sign-up-button").click(function() {
-    $("#complete-profile-container").fadeIn();
-    $('html, body').animate({
-      scrollTop: 200
-    }, 500);
+    transition();
   });
 
   $("#later-button").click(function() {
