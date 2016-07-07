@@ -58,7 +58,7 @@ $(function(){
     var userInterest = $("#marketing-dropdown").val();
 
     userArray.push(new User(userName, userPassword, userEmail, userCity, userState, userInterest));
-    alert(userArray);
+    transition();
   });
 
 });
