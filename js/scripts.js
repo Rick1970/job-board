@@ -64,8 +64,9 @@ $(function(){
     var userCity = $("#sign-up-city").val();
     var userState = $("#state-dropdown").val();
     var userInterest = $("#marketing-dropdown").val();
-
     userArray.push(new User(userName, userPassword, userEmail, userCity, userState, userInterest));
+    $("#greeting").text(userName);
+
     transition();
   });
 
