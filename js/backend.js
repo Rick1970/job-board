@@ -1,6 +1,3 @@
-//global variables
-var numberDisplayed = 6;
-
 //populates job postings at initiation of page
 function displayPostings(i) {
   var sentence = "<div class='back-job-postings col-md-4'><div class='panel panel-primary'><div class='panel-heading'><h3 class='panel-title'>" + backPositionArray[i].title + "</h3></div><div class='panel-body'><p><strong>Company: </strong>" + backPositionArray[i].company + "</p><p><strong>Location: </strong>" + backPositionArray[i].location + "</p><p><strong>Description: </strong>" + backPositionArray[i].description + "</p><p>";
@@ -24,20 +21,25 @@ function filterPostings(match) {
       $(this).show();
     }
   });
+  $("#showMoreResults").text("");
 }
 
 //resets job posting results to default state when clicked
 function resetPostings() {
   $(".back-job-postings").each(function(index) {
-    $(this).show();
+    $(this).hide();
   });
   $("#showMoreResults").text("Show More Results");
+  numberDisplayed = 1;
+  showMoreResults();
 }
 
 //show more job posting results when clicked
+var numberDisplayed = 1;
+
 function showMoreResults() {
   var numberDisplayedTo = numberDisplayed + 6;
-  for (var i = numberDisplayed; i <= numberDisplayedTo; i++) {
+  for (var i = numberDisplayed; i < numberDisplayedTo; i++) {
     var number = $(".back-job-postings:nth-child(" + i + ")");
     if (i === backPositionArray.length) {
       number.show();
@@ -58,7 +60,7 @@ $.each($(".panel-heading"), function() {
   $(this).css("background-color", "hsla(" + Math.floor(Math.random() * 360) + "," + Math.floor(Math.random() * 100) + "%," + Math.floor(Math.random() * 100) + "%," + Math.random() + ")");
 });
 
-//populates job postings and hides everything
+//populates job postings, hides everything, and shows initial six job postings
 for (var i = 0; i < backPositionArray.length; i++) {
   displayPostings(i);
 };
@@ -67,7 +69,4 @@ $(".back-job-postings").each(function(index) {
   $(this).hide();
 })
 
-//show first six job postings
-for (var i = 1; i <= numberDisplayed; i++) {
-  $(".back-job-postings:nth-child(" + i + ")").show();
-}
+showMoreResults();
