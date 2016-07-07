@@ -42,10 +42,10 @@ function showMoreResults() {
   for (var i = numberDisplayed; i < numberDisplayedTo; i++) {
     var number = $(".back-job-postings:nth-child(" + i + ")");
     if (i === backPositionArray.length) {
-      number.show();
+      number.fadeIn();
       $("#showMoreResults").text("");
     } else if (number.length > 0) {  //roundabout way of checking for existence
-      number.show();
+      number.fadeIn();
     } else {
       $("#showMoreResults").text("");
     }

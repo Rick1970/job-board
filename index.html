@@ -36,8 +36,8 @@
           <h3><strong>Sign Up</strong></h3>
           <div class="row">
             <div class="col-xs-8">
-              <input class="sign-up-box" type="text" placeholder="Desired Username">
-              <input class="sign-up-box" type="text" placeholder="Email Address">
+              <input id="register-username" class="sign-up-box" type="text" placeholder="Desired Username">
+              <input id="register-email" class="sign-up-box" type="text" placeholder="Email Address">
             </div>
             <div class="col-xs-4">
               <button id="sign-up-button" class="btn" type="button">Sign Up</button>
@@ -53,8 +53,8 @@
                 </div>
                 <div class="col-xs-6">
                   <label for="name">State</label>
-                  <select class="sign-up-box" id="marketing-dropdown">
-                    <option value="0" selected disabled>Please select one:</option>
+                  <select class="sign-up-box" id="state-dropdown">
+                    <option value="0" selected disabled>Select:</option>
                     <option value="AL">Alabama</option>
                   	<option value="AK">Alaska</option>
                   	<option value="AZ">Arizona</option>
@@ -112,7 +112,7 @@
               <label for="name">I'm interested in learning more about...</label>
 
               <select class="sign-up-box" id="marketing-dropdown">
-                <option value="0" selected disabled>Please select one:</option>
+                <option value="0" selected disabled>Please select:</option>
                 <option>Travel and vacations</option>
                 <option>Discount club memberships</option>
                 <option>The latest cool apps</option>
@@ -144,7 +144,7 @@
           <div class="col-xs-8">
             <form>
               <select class="form-control" id="languages">
-                <option value="0" selected disabled>Please select one of the following:</option>
+                <option value="0" selected disabled>Please select:</option>
                 <option value="C-Sharp">C-Sharp</option>
                 <option value="Javascript">Javascript</option>
                 <option value="Java">Java</option>
@@ -174,7 +174,9 @@
         <!-- job postings will populate here -->
       </div>
       <div class="row">
-        <p><strong id="showMoreResults">Show More Results</strong></p>
+        <div class="show-more-container">
+          <p id="showMoreResults"><span class="glyphicon glyphicon-chevron-down"></span></p>
+        </div>
       </div>
     </div>
     <div class="full-container hidden">
