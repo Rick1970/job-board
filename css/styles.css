@@ -33,8 +33,10 @@ body {
   padding-top: 10%;
   background-image: url("../img/landing.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   text-align: center;
   text-shadow: -1px 0 black, 0 2px 0 black, 0 -1px black;
@@ -62,6 +64,14 @@ input, select {
   color: #555;
 }
 
+#login-error {
+  display: none;
+}
+
+#complete-profile-container {
+  display: none;
+}
+
 #sign-in-button {
   background-color: steelblue;
 }
@@ -81,9 +91,10 @@ input, select {
 
 #complete-button, #later-button {
   width: 100%;
-  height: 40px;
+  min-height: 45px;
   margin-top: 5px;
   font-size: 14px;
+  padding: 8px;
   border-radius: 0;
   border: none;
 }

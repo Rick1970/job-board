@@ -2,18 +2,18 @@
 $(function(){
 
   $("#sign-in-button").click(function() {
-    $(".landing").fadeOut("fast", function() {
-      $(".hidden").each(function() {
-        $(this).removeClass("hidden");
-        $(this).fadeIn();
-      });
-    });
+    $("#login-error").fadeIn();
+  });
+
+  $("#sign-up-button").click(function() {
+    $("#complete-profile-container").fadeIn();
   });
 
   $("#later-button").click(function() {
     $(".landing").fadeOut("fast", function() {
       $(".hidden").each(function() {
         $(this).removeClass("hidden");
+        window.scrollTo(0, 0);
         $(this).fadeIn();
       });
     });
@@ -25,14 +25,6 @@ $(function(){
       scrollTop: 0
     }, 500);
   });
-
-  // $("#up-button").click(function() {
-  //   $("body").fadeOut("fast", function() {
-  //     window.scrollTo(0, 0);
-  //     console.log(window.location)
-  //   });
-  //   $("body").fadeIn();
-  // });
 
   //Runs the backend function to display filtered jobs as selected
   $("#languages").change(function(){
