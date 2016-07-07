@@ -52,7 +52,7 @@ $(function(){
     var userEmail = $("#register-email").val();
     var userCity = $("#sign-up-city").val();
     var userState = $("#state-dropdown").val();
-    var userInterest $("#marketing-dropdown").val();
+    var userInterest = $("#marketing-dropdown").val();
 
     alert(userName);
     alert(userPassword);
@@ -61,5 +61,5 @@ $(function(){
     alert(userState);
     alert(userInterest);
   });
-  
+
 });
