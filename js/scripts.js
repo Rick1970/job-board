@@ -1,5 +1,4 @@
 
-var showButton = false;
 $(function(){
 
   $("#sign-in-button").click(function() {
@@ -8,17 +7,32 @@ $(function(){
         $(this).removeClass("hidden");
         $(this).fadeIn();
       });
-      showButton = true;
+    });
+  });
+
+  $("#later-button").click(function() {
+    $(".landing").fadeOut("fast", function() {
+      $(".hidden").each(function() {
+        $(this).removeClass("hidden");
+        $(this).fadeIn();
+      });
     });
   });
 
   //Scrolls to the top of page on click of ^ button
   $("#up-button").click(function() {
-    $("body").fadeOut("fast", function() {
-      window.scrollTo(0, 0);
-    });
-    $("body").fadeIn();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
   });
+
+  // $("#up-button").click(function() {
+  //   $("body").fadeOut("fast", function() {
+  //     window.scrollTo(0, 0);
+  //     console.log(window.location)
+  //   });
+  //   $("body").fadeIn();
+  // });
 
   //Runs the backend function to display filtered jobs as selected
   $("#languages").change(function(){
