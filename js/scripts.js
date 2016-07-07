@@ -1,16 +1,4 @@
-// $(".panel-heading").next().animate({
-//   height: "toggle"
-// }, 300, function(){
-//     console.log("hi");
-// });
 
-// $(".panel-heading").click(function() {
-//   $(this).next().animate({
-//     height: "toggle"
-//   }, 300, function(){
-//     console.log("hi");
-//   });
-// });
 var showButton = false;
 $(function(){
 
@@ -23,14 +11,6 @@ $(function(){
       showButton = true;
     });
   });
-
-  // //Shows the ^ button
-  // $(window).scroll(function(){
-  //   if (showButton === true) {
-  //     $("#up-button-container").fadeIn("fast");
-  //     $("#up-button-container").css("position", "fixed");
-  //   }
-  // });
 
   //Scrolls to the top of page on click of ^ button
   $("#up-button").click(function() {
@@ -50,19 +30,5 @@ $(function(){
   $("#reset-button").click(function() {
     resetPostings();
   });
-
-
-// function randoColor() {
-//
-// };
-//
-// function invert(item) {
-//   $(item).css("background-color", "grey");
-// }
-//
-// $(".panel").hover(function(){
-//   invert($(this));
-//   $(this).focusOut
-// });
 
 });
