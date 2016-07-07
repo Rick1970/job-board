@@ -31,4 +31,8 @@ $(function(){
     resetPostings();
   });
 
+  //Show more job posting results
+  $("#showMoreResultsButton").click(function() {
+    showMoreResults();
+  });
 });

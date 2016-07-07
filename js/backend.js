@@ -1,4 +1,7 @@
-//populates job postings at initiation
+//global variable
+var numberDisplayed = 6;
+
+//populates job postings at initiation of page
 function displayPostings(i) {
   var sentence = "<div class='back-job-postings col-md-4'><div class='panel panel-primary'><div class='panel-heading'><h3 class='panel-title'>" + backPositionArray[i].title + "</h3></div><div class='panel-body'><p><strong>Company: </strong>" + backPositionArray[i].company + "</p><p><strong>Location: </strong>" + backPositionArray[i].location + "</p><p><strong>Description: </strong>" + backPositionArray[i].description + "</p><p>";
   for (var j = 0; j < backPositionArray[i].tags.length; j++) {
@@ -9,12 +12,12 @@ function displayPostings(i) {
     }
   }
   sentence += "</p></div></div></div>";
-  $("#job-search-output").append(sentence); //test change
+  $("#job-search-output").append(sentence);
 }
 
-for (var i = 0; i < backPositionArray.length; i++) {
+for (var i = 0; i < numberDisplayed; i++) {
   displayPostings(i);
-}
+};
 
 //randomizes colors for job posting heading
 $.each($(".panel-heading"), function() {
@@ -27,15 +30,26 @@ $.each($(".panel-heading"), function() {
 function filterPostings(match) {
   $(".back-job-postings").each(function(index) {
     if (backPositionArray[index].tags.indexOf(match) === -1) {
-      $(this).hide(); //test change
+      $(this).hide();
     } else if (backPositionArray[index].tags.indexOf(match) > -1) {
       $(this).show();
     }
   });
 }
 
+
+//resets job posting results to default state when clicked
 function resetPostings() {
   $(".back-job-postings").each(function(index) {
     $(this).show();
   });
+}
+
+//show more job posting results when clicked
+function showMoreResults() {
+  var numberDisplayedTo = numberDisplayed + 6;
+  for (var i = numberDisplayed; i < numberDisplayedTo; i++) {
+    displayPostings(i);
+  };
+  numberDisplayed += 6;
 }
