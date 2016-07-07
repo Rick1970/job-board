@@ -45,5 +45,9 @@ $(function(){
     showMoreResults();
   });
 
-  $(""
+  $("#complete-button").submit(function(event) {
+    event.preventDefault();
+
+    var userName = $("")
+  });
 });
