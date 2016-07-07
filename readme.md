@@ -20,7 +20,7 @@ This is a website for a hypothetical job search company specializing in technolo
 | Job posting headers display a random color selected from a range of colors. | n/a | n/a |
 | Job postings can be filtered according to pre-defined tags. | n/a | n/a |
 | An image carousel will display articles of interest at the bottom of the page. | n/a | n/a |
-| The website will employ consistent a consistent design vocabulary. | n/a | n/a |
+| The website will employ consistent design vocabulary. | n/a | n/a |
 
 ## Setup/Installation Requirements
 
