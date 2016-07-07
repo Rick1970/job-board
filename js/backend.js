@@ -54,11 +54,16 @@ function showMoreResults() {
 }
 
 //randomizes colors for job posting heading
-$.each($(".panel-heading"), function() {
-  var color = Math.floor(Math.random() * 256);
-  // $(this).css("background-color", "rgba(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.random() + ")");
-  $(this).css("background-color", "hsla(" + Math.floor(Math.random() * 360) + "," + Math.floor(Math.random() * 100) + "%," + Math.floor(Math.random() * 100) + "%," + Math.random() + ")");
-});
+function randomizeColors() {
+  $(".panel-heading").each(function() {
+    var h = Math.floor(Math.random() * 360);
+    var s = Math.floor(Math.random() * 30) + 50;
+    var l = Math.floor(Math.random() * 20) + 40;
+    var a = 0.9;
+    $(this).css("background-color", "hsla(" + h + "," + s + "%," + l + "%, " + a + ")");
+  });
+}
+
 
 //populates job postings, hides everything, and shows initial six job postings
 for (var i = 0; i < backPositionArray.length; i++) {
@@ -70,3 +75,4 @@ $(".back-job-postings").each(function(index) {
 })
 
 showMoreResults();
+randomizeColors();
