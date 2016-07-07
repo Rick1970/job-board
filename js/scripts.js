@@ -1,9 +1,19 @@
-function transition() {
+function signUp() {
   $("#complete-profile-container").fadeIn();
   $('html, body').animate({
     scrollTop: 200
   }, 500);
 }
+
+function transition() {
+  $(".landing").fadeOut("fast", function() {
+    $(".hidden").each(function() {
+      $(this).removeClass("hidden");
+      window.scrollTo(0, 0);
+      $(this).fadeIn();
+    });
+  });
+};
 
 $(function(){
   $("#sign-in-button").click(function() {
@@ -11,17 +21,15 @@ $(function(){
   });
 
   $("#sign-up-button").click(function() {
+    signUp();
+  });
+
+  $("#complete-button").click(function() {
     transition();
   });
 
   $("#later-button").click(function() {
-    $(".landing").fadeOut("fast", function() {
-      $(".hidden").each(function() {
-        $(this).removeClass("hidden");
-        window.scrollTo(0, 0);
-        $(this).fadeIn();
-      });
-    });
+    transition();
   });
 
   //Scrolls to the top of page on click of ^ button
