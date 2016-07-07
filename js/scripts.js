@@ -1,6 +1,5 @@
 
 $(function(){
-
   $("#sign-in-button").click(function() {
     $("#login-error").fadeIn();
   });
@@ -45,9 +44,21 @@ $(function(){
     showMoreResults();
   });
 
-  $("#complete-button").submit(function(event) {
+  $("#sign-up-form").submit(function(event) {
     event.preventDefault();
 
-    var userName = $("")
+    var userName = $("#sign-up-name").val();
+    var userPassword = $("#register-password").val();
+    var userEmail = $("#register-email").val();
+    var userCity = $("#sign-up-city").val();
+    var userState = $("#state-dropdown").val();
+    var userInterest $("#marketing-dropdown").val();
+
+    alert(userName);
+    alert(userPassword);
+    alert(userEmail);
+    alert(userCity);
+    alert(userState);
+    alert(userInterest);
   });
 });
