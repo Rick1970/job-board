@@ -57,12 +57,8 @@ $(function(){
     var userState = $("#state-dropdown").val();
     var userInterest = $("#marketing-dropdown").val();
 
-    alert(userName);
-    alert(userPassword);
-    alert(userEmail);
-    alert(userCity);
-    alert(userState);
-    alert(userInterest);
+    userArray.push(new User(userName, userPassword, userEmail, userCity, userState, userInterest));
+    alert(userArray);
   });
 
 });
