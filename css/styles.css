@@ -49,13 +49,13 @@ body {
   padding: 0 0 2% 0;
 }
 
-#sign-in-box, #sign-up-box {
-  background-color: rgba(220, 225, 227, 0.5);
+.sign-in-box, .sign-up-box {
+  background-color: rgba(220, 225, 227, .8);
   font-size: 1em;
   padding: 8px;
   margin-bottom: 8px;
   border: 1px solid grey;
-  width: 60%;
+  width: 100%;
 }
 
 #sign-in-button {
@@ -66,13 +66,22 @@ body {
   background-color: hotpink;
 }
 
-#sign-in-box:focus {
+#sign-in-button, #sign-up-button {
+  height: 70px;
+  width: 70px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.sign-in-box:focus {
   outline: none;
   border: 1px solid steelblue !important;
   box-shadow: 0 0 15px steelblue;
 }
 
-#sign-up-box:focus {
+.sign-up-box:focus {
   outline: none;
   border: 1px solid hotpink !important;
   box-shadow: 0 0 15px hotpink;
