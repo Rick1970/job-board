@@ -37,4 +37,8 @@ $(function(){
     resetPostings();
   });
 
+  //Show more job posting results
+  $("#showMoreResults").click(function() {
+    showMoreResults();
+  });
 });
